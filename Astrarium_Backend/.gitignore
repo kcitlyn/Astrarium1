@@ -1,0 +1,92 @@
+# -------------------------
+# Node / Next.js (frontend)
+# -------------------------
+# dependencies
+node_modules/
+# Next.js build output
+.next/
+out/
+# Vite / build
+dist/
+build/
+# environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Python / FastAPI (backend)
+# -------------------------
+# virtual environment
+venv/
+env/
+.venv/
+# Byte-compiled / optimized / cache
+__pycache__/
+*.py[cod]
+*$py.class
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+# sqlite DB (if used)
+*.db
+*.sqlite3
+# dotenv
+.env
+# coverage
+htmlcov/
+.coverage
+.coverage.*
+# PyInstaller
+*.manifest
+*.spec
+
+# -------------------------
+# Common IDE / OS files
+# -------------------------
+# VS Code
+.vscode/
+# JetBrains IDEs (PyCharm, IntelliJ)
+.idea/
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+# logs
+*.log
+
+# -------------------------
+# Secrets / keys / credentials
+# -------------------------
+# Any files that may contain secrets (API keys, private certs)
+secrets.yml
+*.pem
+*.key
+
+# -------------------------
+# Optional: large binaries / media
+# -------------------------
+# If you have large files, consider using Git LFS instead of committing them:
+# *.zip
+# *.tar.gz
+# media/
+# videos/
+
+# -------------------------
+# Temporary files
+# -------------------------
+*.swp
+*.swo
+*.tmp
+
+.claude/
+.claude
