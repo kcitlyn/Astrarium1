@@ -112,7 +112,7 @@ export const DevExperienceSection: FC<DevExperienceSectionProps> = () => {
    {/* 16:9 aspect ratio */}
    <iframe
      className="absolute inset-0 h-full w-full"
-     src="https://www.youtube.com/embed/VIDEO_ID?rel=0&modestbranding=1"
+     src="https://www.youtube.com/embed/eHjGSOvg-6I?si=RSPbtygAzjQ4KX0v"
      title="Astrarium Demo"
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
      allowFullScreen
@@ -121,7 +121,8 @@ export const DevExperienceSection: FC<DevExperienceSectionProps> = () => {
  </div>
 </div>
        </div>
-     </div>
+     </div>66666666
+     
    </section>
  );
 };

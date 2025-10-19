@@ -129,21 +129,21 @@ async def submit_answer(
     oracle = CelestialAIOracle()
     evaluation_feedback = None
 
-    # Always use AI to evaluate the answer, regardless of type
-    if question.question_type == "open_ended":
-        acceptable_answers = question.options if question.options else []
+    # For multiple choice, do direct comparison
+    if question.question_type == "multiple_choice":
+        is_correct = submission.user_answer.strip() == question.correct_answer.strip()
+        evaluation_feedback = None
     else:
-        # For multiple choice, treat the correct answer as the string, and options as possible acceptable answers
+        # For open-ended questions, use AI evaluation
         acceptable_answers = question.options if question.options else []
-
-    evaluation = oracle.evaluate_open_ended_answer(
-        question_text=question.question_text,
-        user_answer=submission.user_answer,
-        correct_answer=question.correct_answer,
-        acceptable_answers=acceptable_answers
-    )
-    is_correct = evaluation["is_correct"]
-    evaluation_feedback = evaluation["feedback"]
+        evaluation = oracle.evaluate_open_ended_answer(
+            question_text=question.question_text,
+            user_answer=submission.user_answer,
+            correct_answer=question.correct_answer,
+            acceptable_answers=acceptable_answers
+        )
+        is_correct = evaluation["is_correct"]
+        evaluation_feedback = evaluation["feedback"]
 
     base_xp = question.cosmic_reward
     xp_earned = base_xp if is_correct else base_xp // 2
