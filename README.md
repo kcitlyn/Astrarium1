@@ -1,3 +1,9 @@
+# HACKTX25
+We are an all-girl freshman team of UT Students!
+Kaitlyn Chen - ECE '29
+Vaidehi Bipin - CS '29
+Neha Lazar - SDS '29
+
 # Astrarium 🌌
 
 Your productivity fuels the stars.
