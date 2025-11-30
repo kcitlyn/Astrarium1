@@ -107,10 +107,9 @@ We built it to make long-term learning emotionally engaging, not transactional.
 ---
 
 ## Team
-
+- **Kaitlyn C.** – Backend & Integration
 - **Vidhu B.** – Frontend & UI/UX  
-- **Kaitlyn C.** – Graphics & Frontend Design  
-- **Neha L.** – Backend & Integration
+- **Neha L.** – Graphics & Frontend Design  
 
 ---
 
